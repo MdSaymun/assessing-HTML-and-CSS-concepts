@@ -1,0 +1,156 @@
+:root {
+  --primary-color: #00bbff;
+  --heading-color: #0d1f22;
+  --border-color: #565656d6;
+  --table-heading-color: #2f2f2fd6;
+  --font-color: #262626d6;
+  --font-color-hover: #222222e4;
+  --font-size: 16px;
+}
+
+* {
+  font-family: Arial, sans-serif;
+  font-size: var(--font-size);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1170px;
+  height: auto;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #e3e3e3;
+}
+
+a {
+  color: var(--font-color);
+  text-decoration: none;
+}
+
+a:visited {
+  color: #9900cc;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+nav .nav-left h4 {
+  font-size: 1.2rem;
+  color: var(--heading-color);
+  font-weight: 600;
+  text-align: left;
+}
+
+.nav-right ul {
+  list-style: none;
+}
+
+.nav-right ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+.nav-right ul li:first-child a {
+  border-bottom: 2px solid var(--border-color);
+}
+.nav-right ul li a {
+  padding: 4px 10px;
+}
+
+.nav-right ul li a:hover {
+  color: var(--font-color-hover);
+  border-bottom: 2px solid var(--border-color);
+}
+
+.box-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.box-card .box {
+  padding: 0.5rem;
+  width: 50%;
+}
+
+.box-card .box-card-left h1 {
+  color: var(--heading-color);
+  font-size: 3rem;
+  text-align: left;
+  font-weight: bold;
+}
+.box-card .box-card-left p {
+  color: var(--font-color);
+  font-size: 1.2rem;
+}
+
+.box-card .box-card-right {
+  position: relative;
+}
+
+.box-card .box-card-right img {
+  width: 100%;
+  height: auto;
+}
+
+.box-card .box-card-right::after {
+  content: "Laptop Macbook Pro";
+  display: block;
+  position: absolute;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  color: #ffffff;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+  position: relative;
+}
+
+th,
+td {
+  border: 1px solid var(--border-color);
+  padding: 8px;
+}
+
+tbody tr:hover {
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+tbody td:first-child {
+  background-color: #ffcc00;
+}
+
+tbody td:last-child {
+  background-color: #99cc00;
+}
+
+thead th {
+  background-color: var(--primary-color);
+  color: var(--table-heading-color);
+}
+
+.table::before {
+  content: "This is before text ";
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 10px;
+  z-index: 1;
+}
