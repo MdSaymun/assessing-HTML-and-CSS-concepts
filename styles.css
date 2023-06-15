@@ -20,8 +20,9 @@
   max-width: 1170px;
   height: auto;
   margin: 0 auto;
-  padding: 20px;
+  padding: 40px 20px;
   background-color: #e3e3e3;
+  position: relative;
 }
 
 a {
@@ -34,6 +35,10 @@ a:visited {
 }
 
 nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -73,7 +78,7 @@ nav .nav-left h4 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px;
+  padding: 40px 20px;
 }
 
 .box-card .box {
@@ -86,10 +91,12 @@ nav .nav-left h4 {
   font-size: 3rem;
   text-align: left;
   font-weight: bold;
+  line-height: 3.2rem;
 }
 .box-card .box-card-left p {
   color: var(--font-color);
   font-size: 1.2rem;
+  line-height: 1.5rem;
 }
 
 .box-card .box-card-right {
